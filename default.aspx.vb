@@ -91,4 +91,16 @@ Partial Class _Default
 
     End Sub
 
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+    End Sub
+
+    Protected Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
+        tbLoanAmt.Text = " "
+        tbAnnualInterest.Text = " "
+        tbLoanTerm.Text = " "
+        lblMonthlyPmt.Text = " "
+
+
+    End Sub
 End Class

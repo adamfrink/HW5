@@ -11,26 +11,30 @@
     <form id="form1" runat="server">
     <div>
     
-    Mike's Mortgage Calculator
+        Adam&#39;s &quot;Get Money&quot; Mortgage Calculator
         
         <br /><br />
      
-        Loan Amount:<asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
+        *Loan Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
                   
         <br /><br />      
         
-        Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
+        *Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
         
         <br /><br />
 
-        Loan Term (Yrs): <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
+        *Loan Term (Yrs):&nbsp; <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
         
-        <br /><br />
+        <br />
+        <br />
+        *Fields denoted by an asterisk(*) are required<br />
 
-        <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
+        &nbsp;<asp:Button ID="clearButton" runat="server" Text="Clear" Width="75px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" Width="150px" />
         
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        &nbsp;&nbsp;
         
         <br /><br />
                 
