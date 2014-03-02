@@ -71,10 +71,10 @@ Partial Class _Default
             loanAmount = nBalance
             ' incriment month by 1
             theDate = DateAdd("m", 1, theDate)
+
             'Writes the data to a new row in the gridview.
             tRow = loanAmortTbl.NewRow()
             tRow("Payment Number") = String.Format(counterStart)
-            'tRow("Payment Date") = String.Format("{0:dd/MM/yyyy}", theDate)
             tRow("Payment Date") = theDate.ToShortDateString()
             tRow("Principal Paid") = String.Format("{0:C}", principal) ' String.Format("{0:C},principal) formats the variable "prinicpal" as currency (C).
             tRow("Interest Paid") = String.Format("{0:C}", interestPaid)
@@ -96,12 +96,8 @@ Partial Class _Default
         tbAnnualInterest.Text = " "
         tbLoanTerm.Text = " "
         lblMonthlyPmt.Text = " "
-        loanGridView.Columns.Clear()
-
-
-    End Sub
-
-    Protected Sub tbLoanAmt_TextChanged(sender As Object, e As EventArgs) Handles tbLoanAmt.TextChanged
+        tbLoanAmt.Focus()
 
     End Sub
+
 End Class

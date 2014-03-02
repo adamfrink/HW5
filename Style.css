@@ -20,39 +20,11 @@ body
 }
 
 
-
-
-.title {
-			font-size: 26pt;
-			font-variant: small-caps;
-			font-weight: bold;
-			text-align:center;
-			margin-top: 15px;
-			margin-bottom: 0px; 
-		}
-
-.cssgridview {
-    width: auto;
-    margin: 5px 0 10px 0;
-    border: solid 1px #525252;
-    border-collapse: collapse;
+.alt {
+    background-color: #FFE89C;
     text-align: center;
-    font-family: "Comic Sans MS";
 }
 
-.cessgridview td {
-    padding: 10px;
-    border: solid 1px #ff6a00;
-    color: aqua;
-}
-
-.cessgridviw th {
-    padding: 10px;
-    color: blueviolet;
-    border-left: solid 1px #525252;
-    font-size: small;
-}
-
-.cessgridview .alt {
-    background-color: forestgreen;
+.textCenter {
+    text-align: center;
 }

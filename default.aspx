@@ -13,9 +13,9 @@
       
         <div class ="center">
     
-        Adam&#39;s &quot;Get Money&quot; Mortgage Calculator
+        <h2>Adam&#39;s &quot;Get Money&quot; Mortgage Calculator</h2>
         
-        <br /><br />
+     
      
         *Loan Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
                   
@@ -50,9 +50,11 @@
         <p> Welcome to Adam's "Get Money" mortgage calculator! Complete the above fields to have your monthly loan repayment schedule calculated for you.</p>
         
         <%Else%>       
-        Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label>
+        Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server" Font-Bold="True" Font-Size="Large"></asp:Label>
         <br /><br />
-        <asp:GridView ID="loanGridView" runat="server" />
+        <asp:GridView ID="loanGridView" Class="textCenter" runat="server" >
+            <AlternatingRowStyle CssClass ="alt" BorderStyle="None" />
+            </asp:GridView>
         <%End If%>
         
     
