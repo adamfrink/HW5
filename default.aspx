@@ -19,13 +19,19 @@
      
         *Loan Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
                   
+        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbLoanAmt">Loan Amount is required</asp:RequiredFieldValidator>
+                  
         <br /><br />      
         
         *Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
         
+        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbAnnualInterest" ErrorMessage="Annual Interest Rate is required"></asp:RequiredFieldValidator>
+        
         <br /><br />
 
         *Loan Term (Yrs):&nbsp; <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
+        
+        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbLoanTerm" ErrorMessage="Loan Term is required"></asp:RequiredFieldValidator>
         
         <br /> 
         <br />
