@@ -9,7 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    
+      
+        <div class ="center">
     
         Adam&#39;s &quot;Get Money&quot; Mortgage Calculator
         
@@ -47,6 +49,7 @@
         <asp:GridView ID="loanGridView" runat="server" />
         <%End If%>
         
+    
     </div>
     </form>
 </body>

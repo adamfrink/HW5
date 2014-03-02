@@ -96,7 +96,8 @@ Partial Class _Default
         tbAnnualInterest.Text = " "
         tbLoanTerm.Text = " "
         lblMonthlyPmt.Text = " "
-        'loanGridView.
+        loanGridView.Columns.Clear()
+
 
     End Sub
 
