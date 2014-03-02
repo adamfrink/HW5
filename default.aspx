@@ -29,6 +29,9 @@
 
         <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
         
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        
         <br /><br />
                 
         Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label>
